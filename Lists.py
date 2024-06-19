@@ -80,3 +80,8 @@ print("List 2 after emptiying it using clear is : ",List2)
 
 for x in List3: 
     print(x)
+
+#loop through the list by referring to their index number
+
+for i in range(len(List2)):
+  print(List2[i])
