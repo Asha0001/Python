@@ -76,12 +76,67 @@ print("List 2 :",List2)
 List2.clear()
 print("List 2 after emptiying it using clear is : ",List2)
 
-#loop through a list 
+#Sort lists 
+#List objects have a sort() method that will sort the list alphanumerically,ascending,by defaut
+List4 = ['One', 'two', 'Three','Four']
+List4.sort()
+print("List 3 after sorting: ",List4)
 
-for x in List3: 
-    print(x)
+#to sort the list in descending order use the keyword argument reverse =true
 
-#loop through the list by referring to their index number
+List4.sort(reverse=True)
+print("List 4 after sorting in descending order : ",List4)
 
-for i in range(len(List2)):
-  print(List2[i])
+List5 =[45,78,90,200]
+List5.sort(reverse=True)
+print("List 5 with items as numbers after sorting in descending : ",List5)
+
+# in case if we want a case sensitive sort function, use str.lower as a key function
+
+List4.sort(key =str.lower)
+List4.sort(key =str.lower)
+print("List 4 after case insensitive sort : ",List4)
+
+# to reverse the order of the list items use reverse() method
+
+List4.reverse()
+print("List 4 after reversing : ",List4)
+
+# COPY A LIST
+#First way of copying a list : using copy method
+
+CopyList = List4.copy()
+print("copy of list 4 is : ",CopyList)
+
+#second way of making a copy is with list() method
+
+CopyList2 = list(CopyList)
+print("copy list of copy list using list method ",CopyList)
+
+'''
+Pyhton has a set of built-in list methods that we can use on list, also we have used here int he above code 
+
+1) append() : adds an element at the end of the list 
+
+2)clear() : removes all the elements fromt he list 
+
+3)copy() : returns a copy of the list 
+
+4)count() : returns the elements with the specified value
+
+5)extend : add the elements of a list , to the end of the current list
+
+6)index() : returns the index of the first element with the specified value
+
+7)insert() : adds an element at the specified position
+
+8)pop() : removes the element at the specified value
+
+9)reverse() : reverses the order of the list
+
+10)sort() : sorts the list 
+
+11)remove() : used to remove the specified element from the list
+
+'''
+
